@@ -1,0 +1,39 @@
+{
+  "title": "Property Listing Management System",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "operation": {
+      "title": "Operation to Run",
+      "type": "string",
+      "description": "Choose which operation to run",
+      "default": "both",
+      "enum": [
+        "check_new",
+        "update", 
+        "both"
+      ],
+      "enumTitles": [
+        "1. Check and add new properties",
+        "2. Update existing properties",
+        "3. Run both operations"
+      ],
+      "editor": "select"
+    },
+    "batch_size": {
+      "title": "Batch Size",
+      "type": "integer",
+      "description": "Number of records to process in each batch",
+      "default": 16,
+      "minimum": 1,
+      "maximum": 50
+    },
+    "headless": {
+      "title": "Headless Mode",
+      "type": "boolean", 
+      "description": "Run browser in headless mode (recommended for Apify)",
+      "default": true
+    }
+  },
+  "required": ["operation"]
+}

@@ -1,0 +1,13 @@
+{
+  "actorSpecification": 1,
+  "name": "Weekly-Listing-Scraper-Actor1",
+  "title": "Weekly Listing Scraper Actor1",
+  "description": "Search for new results on landing page and scrape data from single page with provided URL.",
+  "version": "0.0",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "python-start"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile"
+}

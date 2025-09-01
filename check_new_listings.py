@@ -18,7 +18,7 @@ URL = "https://share.ecoprop.com/R062972G?VNK=32f530c3"
 # Airtable config
 
 AIRTABLE_API_KEY = "pat2WsZZK3mMRPkua.51d5ffef9db33b0b866b55870f74343ae70d132f2481f1af2de5456b5622bd50"
-AIRTABLE_BASE_ID = "appf8fE9YXD973c5O"
+AIRTABLE_BASE_ID = "app79G4gcDC3l2f4g"
 AIRTABLE_TABLE_ID = "tblLu03udJ2S5fptj"
 # Use table ID consistently - this is the correct format for Airtable API v0
 AIRTABLE_URL = f"https://api.airtable.com/v0/{AIRTABLE_BASE_ID}/{AIRTABLE_TABLE_ID}"
@@ -1042,6 +1042,4 @@ def debug_website_structure(headless=False):
         if not headless:
             input("\nPress Enter to close the browser...")
         driver.quit()
-
-
 
